@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloudflare Pages Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e2e2e2;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello from Cloudflare Pages!</h1>
+    <p>This simple static page was deployed via Cloudflare Pages, proxied by a Cloudflare Worker!</p>
+    <p>You are viewing this from: <code><span id="hostname"></span></code></p>
+
+    <script>
+        document.getElementById('hostname').textContent = window.location.hostname;
+    </script>
+</body>
+</html>
